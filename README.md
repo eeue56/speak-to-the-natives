@@ -11,3 +11,24 @@ Json.Values, and concrete records.
 ```
 
 Any examples here exist only as a discussion point - they aren't to be used in the real world. In the Maths module, I have put purposely badly-named functions such as adding/subtracting so they are clearly not part of Basics or anything other real module.
+
+
+Template
+--------
+
+Below is an example template of a Native module. This should live in a file called <ModuleName>.js, inside a folder called `Native`.
+Swap out `Maths` for the name of the template you're creating.
+
+```javascript
+Elm.Native.Maths = {};
+Elm.Native.Maths.make = function(localRuntime) {
+    localRuntime.Native = localRuntime.Native || {};
+    localRuntime.Native.Maths = localRuntime.Native.Maths || {};
+    if (localRuntime.Native.Maths.values)
+    {
+        return localRuntime.Native.Maths.values;
+    }
+    return Elm.Native.Maths.values = {
+    };
+};
+```
