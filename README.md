@@ -13,6 +13,8 @@ Json.Values, and concrete records.
 Any examples here exist only as a discussion point - they aren't to be used in the real world. In the Maths module, I have put purposely badly-named functions such as adding/subtracting so they are clearly not part of Basics or anything other real module.
 
 
+Native is set to change in Elm 0.16, so this document will be updated to reflect that. I will tag the final version before updating with 0.15.1 so people can find that.
+
 Template
 --------
 
